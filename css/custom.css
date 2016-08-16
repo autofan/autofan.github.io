@@ -1,0 +1,220 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {
+  background-color: #051020;
+  color: #fff;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue",
+                Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+}
+h1, h3, h5 {
+  color: #ffe500;
+  font-weight: 500;
+}
+h2, h4, h6 {
+  color: #e5f77d;
+  font-weight: 300;
+}
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  color: #051020;
+}
+.button {
+  border-radius: 100px;
+}
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #6b654b;
+  border-color: #6b654b; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #d36135;
+  border-color: #d36135; }
+textarea {
+  width: 100%;
+  height: 20rem;
+}
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+section {
+  padding: 7rem 0 6rem;
+  text-align: justify;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body > header {
+  background-image: url('../images/BG-Dashboard.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 3rem 0 1rem;
+}
+.phones {
+  position: relative;
+}
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
+}
+body > header h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+body > header p {
+  font-size: 2.21em;
+}
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body > nav {
+  text-align: center;
+  border-top: .1rem solid #6b654b;
+  border-bottom: .1rem solid #6b654b;
+  padding: 1rem 0 1rem;
+}
+body > nav a {
+  margin: 1rem;
+}
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#services {
+  color: #fff;
+}
+.value-multiplier {
+  margin-bottom: .5rem;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  background-image: url('../images/BG-Beatle.jpg');
+  background-size: cover;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  section {
+    padding: 8rem 0 7rem;
+  }
+  body > header {
+    padding: 4rem 0 2rem;
+    /*text-align: left;*/
+    min-height: 180px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 4.8rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero-heading {
+    font-size: 5.2rem;
+  }
+  section {
+    padding: 10rem 0 8rem;
+  }
+  body > header {
+    padding: 8rem 0 4rem;
+    min-height: 190px;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  section {
+    padding: 15rem 0 11rem;
+  }
+  body > header {
+    padding: 9rem 0 5rem;
+  }
+  .hero-heading {
+    font-size: 6.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
